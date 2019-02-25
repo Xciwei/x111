@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+
+</head>
+<body>
+<script>
+
+    var box = new Object(); //创建一个Object 对象
+    var date= new Date();
+    box.hour=date.getHours();
+    box.run = function () { //创建一个run()方法并返回值
+        if(box.hour<12){
+            return "Good morning";
+        }else if(box.hour<18){
+            return "Good afternoon";
+        }else if(box.hour>=18){
+            return "Good evening";
+        }
+    };
+    alert(box.run()); //输出属性和方法的值
+</script>
+</body>
+</html>
